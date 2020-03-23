@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eep-ey-zFa">
-                                <rect key="frame" x="176" y="221" width="62" height="48"/>
+                                <rect key="frame" x="176" y="94" width="62" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Alert"/>
                                 <connections>
@@ -24,27 +24,80 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-kq-BQa">
-                                <rect key="frame" x="164.5" y="331" width="85" height="48"/>
+                                <rect key="frame" x="164" y="170" width="86" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Alert 2"/>
                                 <connections>
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZv-4p-Sig"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqT-Yl-UmY">
+                                <rect key="frame" x="110" y="319" width="194" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Alert Controller"/>
+                                <connections>
+                                    <action selector="buttonTapped3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nK-wD-eep"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czS-Fd-Buk">
+                                <rect key="frame" x="84" y="259" width="246" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-Kn-K3W">
+                                <rect key="frame" x="98" y="416" width="218" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Alert Controller 2"/>
+                                <connections>
+                                    <action selector="buttonTapped4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nd4-Uk-1Gw"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="enL-5y-EcM">
+                                <rect key="frame" x="0.0" y="498" width="414" height="216"/>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="l1j-vx-V5f"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-jv-ejH">
+                                <rect key="frame" x="135" y="753" width="147" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Date Picker"/>
+                                <connections>
+                                    <action selector="getCurrentDateTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIB-P8-SzR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Eep-ey-zFa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="177" id="4xm-Mx-A8i"/>
-                            <constraint firstItem="Eep-ey-zFa" firstAttribute="centerX" secondItem="Wib-kq-BQa" secondAttribute="centerX" id="8h5-JX-8Of"/>
-                            <constraint firstItem="Eep-ey-zFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9MP-ea-C13"/>
-                            <constraint firstItem="Wib-kq-BQa" firstAttribute="top" secondItem="Eep-ey-zFa" secondAttribute="bottom" constant="62" id="o9A-43-525"/>
+                            <constraint firstItem="Wib-kq-BQa" firstAttribute="top" secondItem="Eep-ey-zFa" secondAttribute="bottom" constant="28" id="1UF-fh-zbj"/>
+                            <constraint firstItem="enL-5y-EcM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="35f-Ih-cLE"/>
+                            <constraint firstItem="jqT-Yl-UmY" firstAttribute="centerX" secondItem="fSz-Kn-K3W" secondAttribute="centerX" id="60P-hH-9cc"/>
+                            <constraint firstItem="Eep-ey-zFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6WH-JL-5UG"/>
+                            <constraint firstItem="czS-Fd-Buk" firstAttribute="centerX" secondItem="jqT-Yl-UmY" secondAttribute="centerX" id="Dcr-43-fJr"/>
+                            <constraint firstItem="jqT-Yl-UmY" firstAttribute="top" secondItem="czS-Fd-Buk" secondAttribute="bottom" constant="39" id="FQK-DD-tji"/>
+                            <constraint firstItem="yaW-jv-ejH" firstAttribute="top" secondItem="enL-5y-EcM" secondAttribute="bottom" constant="39" id="KrM-F4-XJc"/>
+                            <constraint firstItem="Wib-kq-BQa" firstAttribute="centerX" secondItem="czS-Fd-Buk" secondAttribute="centerX" id="R33-Ha-zgy"/>
+                            <constraint firstItem="czS-Fd-Buk" firstAttribute="top" secondItem="Wib-kq-BQa" secondAttribute="bottom" constant="41" id="UPe-NP-F4L"/>
+                            <constraint firstItem="enL-5y-EcM" firstAttribute="top" secondItem="fSz-Kn-K3W" secondAttribute="bottom" constant="34" id="hLn-1f-doN"/>
+                            <constraint firstItem="fSz-Kn-K3W" firstAttribute="centerX" secondItem="enL-5y-EcM" secondAttribute="centerX" id="hhp-9w-oLY"/>
+                            <constraint firstItem="fSz-Kn-K3W" firstAttribute="top" secondItem="jqT-Yl-UmY" secondAttribute="bottom" constant="49" id="kjF-ZH-kYe"/>
+                            <constraint firstItem="Wib-kq-BQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="qip-bl-AHH"/>
+                            <constraint firstItem="czS-Fd-Buk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="qxR-uO-Sob"/>
+                            <constraint firstItem="Eep-ey-zFa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sNJ-gP-Tyx"/>
+                            <constraint firstItem="Eep-ey-zFa" firstAttribute="centerX" secondItem="Wib-kq-BQa" secondAttribute="centerX" id="vJG-yi-aFZ"/>
+                            <constraint firstItem="yaW-jv-ejH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="yk0-57-im3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelResult" destination="czS-Fd-Buk" id="XU6-rg-LoU"/>
+                        <outlet property="myDatePicker" destination="enL-5y-EcM" id="RQE-zq-jeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="137"/>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
         </scene>
     </scenes>
 </document>
